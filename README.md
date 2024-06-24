@@ -18,5 +18,6 @@ This project was developed as part of a group assignment for the Foundation Year
 
 ## Technologies Used
 - **HTML5**: For structuring the content.
-- **CSS3**: For styling and layout.
+- **CSS**: For styling and layout.
 - **JavaScript**: For adding interactivity and dynamic content.
+- **PHP**: For Contact Form
