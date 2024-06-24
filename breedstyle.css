@@ -1,0 +1,248 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgb(218, 108, 218),rgb(221, 197, 221));
+    padding: 10px 20px;
+    position: relative;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.contact-info {
+    font-size: 18px;
+    color: #fff;
+}
+.nav-links li:hover .dropdown {
+    display: block;
+}
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position:relative;
+        top: 60px;
+        left: 0;
+        background-color: #C39BD3;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .toggle-label {
+        display: block;
+    }
+
+    .toggle-checkbox:checked + .toggle-label + .nav-links {
+        display: flex;
+    }
+    .contact-info {
+        display: none;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    text-align:top;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:left ;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position:relative;
+        top: 60px;
+        left: 0;
+        background-color: #C39BD3;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .toggle-label {
+        display: block;
+    }
+
+    .toggle-checkbox:checked + .toggle-label + .nav-links {
+        display: flex;
+    }
+
+    .contact-info {
+        display: none;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+    .box{
+        width: 80%;
+        height: 80%;
+        display: column;
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon:hover {
+    background-color: #777;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #dfd3d3;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+
